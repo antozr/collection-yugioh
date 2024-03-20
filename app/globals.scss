@@ -1,0 +1,40 @@
+
+
+@use '../assets/styles/fonts.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "JosefinSans";
+  font-size: 16px;
+  font-weight: 400;
+ 
+
+}
+
+@font-face {
+  font-family: 'NafaRegular';
+  src: url(../assets/fonts/NafasManualRegular.otf);
+}
+@font-face {
+  font-family: 'NafaSlice';
+  src: url(../assets/fonts/NafasManualSliced.otf);
+}
+@font-face {
+  font-family: 'JosefinSans';
+  src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'JosefinSans-Italic';
+  src: url(../assets/fonts/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+

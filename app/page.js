@@ -1,10 +1,9 @@
-import styles from "./page.module.css";
+
 import IntroBox from "./components/BoxIntro/index";
 
 export default function Home() {
   return (
     <>
-      <main className={styles.main}>Home</main>
       <IntroBox
         title1={"Bien le bonjour "}
         txt1={
