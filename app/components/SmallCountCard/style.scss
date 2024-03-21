@@ -1,0 +1,30 @@
+.sect{
+    &__smCoCard{
+        height: 50px;
+        min-width: 120px;
+        width: 30vw;
+        background-color: #CFC9A9;
+        padding: 4px 5px;
+        border-radius: 8px;
+    }
+}
+
+.smCoCard{
+    &__box{
+
+        padding: 4px;
+        background-color: #1d1d1d;
+        color: #ffffff;
+        height: 100%;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__txt{
+        font-size: 28px;
+        font-family: "NafaSlice";
+        opacity: 0.8;
+    }
+}
