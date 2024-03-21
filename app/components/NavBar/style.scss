@@ -22,6 +22,26 @@
       justify-content: center;
       row-gap: 4px;
       color: #f2e9e4;
+      &--actif{
+        color: #CEAA67;
+        &>p{
+          color: #CEAA67;
+          transition: 0.3s;
+          opacity: 0;
+          scale: 0;
+
+        }
+        &>svg{
+          transition: 0.3s;
+          scale: 1.4;
+          stroke: #CEAA67;
+          fill:#CEAA67;
+          transform: translateY(4px);
+          &>*{
+            fill:#CEAA67;
+          }
+        }
+      }
     }
   
     &__txt {
@@ -30,6 +50,7 @@
       font-size: 14px;
       font-weight: 300;
       line-height: normal;
+      transition: 0.3s;
     }
   }
   

@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
 
 const Navbar = () => {
+
+  const [navLink, setNavLink]= useState([true, false, false, false])
   let allLink = [
     {
       name: "Acceuil",
@@ -121,18 +123,42 @@ const Navbar = () => {
     </>,
   ];
 
+function killActiveNav(){
+  let allActifItem = document.querySelectorAll('.nav__link--actif');
+  allActifItem.forEach((el)=>{
+    el.classList.remove('nav__link--actif');
+  });
+}
+  function activeNavItem(ind){
+    //console.log('je suis clickééééé');
+    
+    // killActiveNav()
+    if (ind === 0 ){
+      setNavLink([true, false, false, false]);
+    } else if (ind === 1 ){
+      setNavLink([false, true, false, false]);
+    } else if (ind === 2 ){
+      setNavLink([false,false , true, false]);
+    } else if (ind === 3 ){
+      setNavLink([false, false, false, true]);
+    } else{
+
+    }
+    
+  }
+
   return (
     <nav className="nav">
       <ul className="nav__list">
         {allLink.map((el, key) => (
-          <li className="nav__el" key={key}>
+          <li className="nav__el" key={key} >
             <Link
               href={el.link}
               key={el.index}
-              className="nav__link"
+              className={navLink[el.index] ? "nav__link nav__link--actif" : "nav__link"}
               replace={true}
               aria-label={"Voici un lien qui se dirige vers " + el.name}
-              
+              onClick={()=>{activeNavItem(el.index)}}
             >
              
               {allIcon[el.index]}
