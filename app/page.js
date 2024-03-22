@@ -1,5 +1,6 @@
 
 import IntroBox from "./components/BoxIntro/index";
+import IntroTTTxBox from "./components/IntroTiTxBox";
 import SmallCardCount from "./components/SmallCountCard";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         src1={"#"}
         src2={"#"}
       />
+      <IntroTTTxBox />
       <SmallCardCount />
     </>
   );
