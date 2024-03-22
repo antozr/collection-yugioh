@@ -25,7 +25,7 @@ export default function Home() {
       />
       <IntroTTTxBox />
       <SmallCardCount />
-      <ButtonStyle />
+      <ButtonStyle show1={true}/>
     </>
   );
 }
