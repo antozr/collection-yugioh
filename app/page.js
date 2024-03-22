@@ -2,6 +2,7 @@
 import IntroBox from "./components/BoxIntro/index";
 import IntroTTTxBox from "./components/IntroTiTxBox";
 import SmallCardCount from "./components/SmallCountCard";
+import ButtonStyle from "./components/bouttonStyle";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       />
       <IntroTTTxBox />
       <SmallCardCount />
+      <ButtonStyle />
     </>
   );
 }
