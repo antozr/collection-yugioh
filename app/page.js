@@ -1,8 +1,9 @@
 
 import IntroBox from "./components/BoxIntro/index";
 import IntroTTTxBox from "./components/IntroTiTxBox";
-import SmallCardCount from "./components/SmallCountCard";
-import ButtonStyle from "./components/bouttonStyle";
+import BoxSelectorInventaire from "./components/atom/BoxInventaireSelector";
+import SmallCardCount from "./components/atom/SmallCountCard";
+import ButtonStyle from "./components/atom/bouttonStyle";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <IntroTTTxBox />
       <SmallCardCount />
       <ButtonStyle show1={true}/>
+      <BoxSelectorInventaire show1={false} />
     </>
   );
 }

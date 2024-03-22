@@ -27,7 +27,7 @@ const ButtonStyle = ({nameBtn, link, show1}) => {
       </div> */}
       {show1? <> <div className="buttonS__box">
         <Link
-          href={link}
+          href={{link}}
           aria-label="Il va vous rediriger"
           className="buttonS__btn"
         >
@@ -36,7 +36,7 @@ const ButtonStyle = ({nameBtn, link, show1}) => {
       </div></> : <> <div className="buttonS__boxD">
         <div className="buttonS__box buttonS__box--black">
           <Link
-            href={link}
+            href={{link}}
             aria-label="Il va vous rediriger"
             className="buttonS__btn"
           >
