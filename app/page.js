@@ -26,7 +26,7 @@ export default function Home() {
       />
       <IntroTTTxBox />
       <SmallCardCount />
-      <ButtonStyle show1={true}/>
+      <ButtonStyle show1={true} nameBtn={"Ajoute en +"} />
       <BoxSelectorInventaire show1={false} />
     </>
   );
