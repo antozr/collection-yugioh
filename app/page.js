@@ -2,6 +2,7 @@
 import IntroBox from "./components/BoxIntro/index";
 import IntroTTTxBox from "./components/IntroTiTxBox";
 import BoxSelectorInventaire from "./components/atom/BoxInventaireSelector";
+import CardBoxTitle1 from "./components/atom/CardBoxTitle1";
 import SmallCardCount from "./components/atom/SmallCountCard";
 import ButtonStyle from "./components/atom/bouttonStyle";
 
@@ -26,8 +27,10 @@ export default function Home() {
       />
       <IntroTTTxBox />
       <SmallCardCount />
+      <CardBoxTitle1 />
       <ButtonStyle show1={true} nameBtn={"Ajoute en +"} />
       <BoxSelectorInventaire show1={false} />
+
     </>
   );
 }
