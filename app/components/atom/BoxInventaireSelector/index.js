@@ -1,11 +1,11 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.scss";
 
 const BoxSelectorInventaire = ({show1, idCard, UpNb}) => {
 
-  const [nbInCol, setNbInCol] = useState(0)
+  const [nbInCol, setNbInCol] = useState('?')
 
   function addToCol(){
     //localStorage.setItem(idCardAl+"nb", 0);
@@ -34,6 +34,10 @@ const BoxSelectorInventaire = ({show1, idCard, UpNb}) => {
     
     
   }
+
+  useEffect(()=>{
+    setNbInCol(localStorage.getItem(idCard+"nb"))
+  })
   return (
     <>
       {/* <div className="card__selectorNbInv">

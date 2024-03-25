@@ -57,6 +57,9 @@ var check22 = false;
   const dataBoxInventaire = (data) => {
     setNbCardCol(data);
   };
+  useEffect(()=>{
+    setNbCardCol(localStorage.getItem('card1nb'));// changer pour la réactive par props
+  })
   ///
 
   return (
@@ -103,7 +106,7 @@ var check22 = false;
 
         <BoxSelectorInventaire
           show1={true}
-          idCard={idCard}
+          idCard={"card1"}
           UpNb={dataBoxInventaire}
         />
       </div>
