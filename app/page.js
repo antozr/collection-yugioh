@@ -1,5 +1,6 @@
 
 import IntroBox from "./components/BoxIntro/index";
+import CardElSmall from "./components/CardEl1Small";
 import IntroTTTxBox from "./components/IntroTiTxBox";
 import BoxSelectorInventaire from "./components/atom/BoxInventaireSelector";
 import CardBoxTitle1 from "./components/atom/CardBoxTitle1";
@@ -28,8 +29,10 @@ export default function Home() {
       <IntroTTTxBox />
       <SmallCardCount />
       <CardBoxTitle1 />
+      <CardElSmall />
       <ButtonStyle show1={true} nameBtn={"Ajoute en +"} />
       <BoxSelectorInventaire show1={false} />
+      
 
     </>
   );

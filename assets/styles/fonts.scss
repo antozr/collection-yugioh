@@ -15,4 +15,14 @@
       letter-spacing: 2px;
     }
   }
+
+  &__txt{
+
+    &--light{
+      font-weight: 300;
+    }
+    &--bold{
+      font-weight: 700;
+    }
+  }
 }
