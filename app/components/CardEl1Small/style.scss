@@ -34,6 +34,9 @@
         overflow: hidden;
         &--round{
             border-radius: 4px;
+            &>img{
+                filter: grayscale(0.00);
+            }
         }
     }
     &__img{
@@ -61,5 +64,28 @@
     }
     &__title3{
         margin: 0 0 28px 0;
+    }
+}
+
+@keyframes animImgCard {
+    0%{
+        scale: 1;
+    }
+    15%{
+        scale: 1;
+    }
+    25%{
+        scale: 0.6;
+        transform: skewX(10);
+    }
+    55%{
+        scale: 0.8;
+        transform: skewX(-10);
+    }
+    95%{
+        scale: 1;
+    }
+    100%{
+        scale: 1;
     }
 }
