@@ -1,5 +1,6 @@
 
 import IntroBox from "./components/BoxIntro/index";
+import BigCardInfosPop from "./components/CardBigInfos";
 import CardElSmall from "./components/CardEl1Small";
 import IntroTTTxBox from "./components/IntroTiTxBox";
 import BoxSelectorInventaire from "./components/atom/BoxInventaireSelector";
@@ -30,6 +31,7 @@ export default function Home() {
       <SmallCardCount />
       <CardBoxTitle1 />
       <CardElSmall />
+      <BigCardInfosPop />
       <ButtonStyle show1={true} nameBtn={"Ajoute en +"} />
       <BoxSelectorInventaire show1={false} />
       

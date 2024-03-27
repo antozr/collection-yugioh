@@ -1,0 +1,28 @@
+////// style for the big card components
+/// 
+/// 
+.cardInfoBig{
+
+ width: calc(100vw );
+ min-height: 90vh;
+ padding: 14px 8px;
+ border: 1px solid #4E4648;
+ background-color: #CFC9A9;
+ position: relative;
+ // position: fixed;
+
+    &__btnClose{
+        font-size: 32px;
+        font-family: "NafaSlice";
+        color: #1d1d1d;
+        border: 1px solid #4E4648;
+        background-color: #E2CCA9;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        rotate: -30deg;
+        position: absolute;
+        top: 8px;
+        right: 4px;
+    }
+}

@@ -94,7 +94,7 @@ var check22 = false;
               </p>
               <p className="sect__txt sect__txt--light">
                 Total :{" "}
-                <span className="sect__txt--bold">{prixMkt * nbCardCol}</span>
+                <span className="sect__txt--bold">{prixMkt == NaN ? "?" : prixMkt * nbCardCol}</span>
               </p>
               <p className="sect__txt sect__txt--light">
                 En collection :{" "}
