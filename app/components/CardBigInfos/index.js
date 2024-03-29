@@ -6,6 +6,7 @@ import RowCardInfoI from "../atom/RowCardIInfo";
 import BoxSelectorInventaire from "../atom/BoxInventaireSelector";
 
 const BigCardInfosPop = ({
+  closeCardInfo,
   titleCard,
   idCard,
   typeCard,
@@ -13,7 +14,8 @@ const BigCardInfosPop = ({
   numero,
   level,
   prixMkt,
-  
+  onClose
+ 
 }) => {
 
     const [nbCardCol, setNbCardCol] = useState(0);
@@ -27,8 +29,8 @@ const BigCardInfosPop = ({
   return (
     <>
       <div className="cardInfoBig">
-        <button className="cardInfoBig__btnClose ">X</button>
-        <CardBoxTitle1 title1={"hello"} />
+        <button className="cardInfoBig__btnClose "  onClick={onClose} >X</button>
+        <CardBoxTitle1 title1={"hello"} /> 
 
         <RowCardInfoI infoCard={true}/>
 

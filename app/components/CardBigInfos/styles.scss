@@ -8,8 +8,11 @@
  padding: 14px 8px;
  border: 1px solid #4E4648;
  background-color: #CFC9A9;
- position: relative;
- // position: fixed;
+ //position: relative;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
 
     &__btnClose{
         font-size: 32px;

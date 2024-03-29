@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import CardBoxTitle1 from "../atom/CardBoxTitle1";
 import "./style.scss";
 import BoxSelectorInventaire from "../atom/BoxInventaireSelector";
+import BigCardInfosPop from "../CardBigInfos";
+import { createPortal } from "react-dom";
 
 const CardElSmall = ({
   titleCard,
@@ -16,6 +18,7 @@ const CardElSmall = ({
 }) => {
   const [nbCardCol, setNbCardCol] = useState(0);
   const [idCard, setIdCard] = useState("");
+  const [showModal, setShowModal] = useState();
 
 
 
@@ -61,10 +64,16 @@ var check22 = false;
     setNbCardCol(localStorage.getItem('card1nb'));// changer pour la réactive par props
   })
   ///
+ 
+
+  function openCardInfo(){
+    setShowModal(true);
+
+  }
 
   return (
     <>
-      <div className="card" key={"card1"} id={idCard}>
+      <div className="card" key={"card1"} id={idCard}  onClick={openCardInfo}>
         <CardBoxTitle1 title1={titleCard} />
         <div className="card__containerCentral">
           <div className="card__boxImg">
@@ -110,6 +119,10 @@ var check22 = false;
           UpNb={dataBoxInventaire}
         />
       </div>
+      {showModal && createPortal(
+        <BigCardInfosPop onClose={()=> setShowModal(false)} />, document.body
+      )}
+      
     </>
   );
 };

@@ -31,7 +31,7 @@ export default function Home() {
       <SmallCardCount />
       <CardBoxTitle1 />
       <CardElSmall />
-      <BigCardInfosPop />
+     
       <ButtonStyle show1={true} nameBtn={"Ajoute en +"} />
       <BoxSelectorInventaire show1={false} />
       
