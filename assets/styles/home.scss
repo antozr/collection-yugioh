@@ -1,0 +1,36 @@
+// style for home global section 
+
+.sect{
+    &__endCardHome{
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 0 0 21px;
+        display: flex;
+        flex-direction: column;
+        margin: 91px 0 ;
+    }
+
+    &__rowCardList{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 21px;
+        overflow-x: scroll;
+        padding: 0 28px 0 0 ;
+
+    }
+}
+
+
+.endCardHome{
+    &__rowInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 21px 0 0 ;
+        align-items: center;
+        margin: 21px 0 38px 0;
+
+    }
+}

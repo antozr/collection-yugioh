@@ -1,4 +1,5 @@
-
+"use client";
+import { useEffect, useState } from "react";
 import IntroBox from "./components/BoxIntro/index";
 import BigCardInfosPop from "./components/CardBigInfos";
 import CardElSmall from "./components/CardEl1Small";
@@ -9,6 +10,12 @@ import SmallCardCount from "./components/atom/SmallCountCard";
 import ButtonStyle from "./components/atom/bouttonStyle";
 
 export default function Home() {
+
+  const [nbCardInventaire, setNbCardInventaire] = useState(0);
+let nbCardView = 4;
+
+
+
   return (
     <>
       <IntroBox
@@ -27,14 +34,21 @@ export default function Home() {
         src1={"#"}
         src2={"#"}
       />
-      <IntroTTTxBox />
-      <SmallCardCount />
-      <CardBoxTitle1 />
-      <CardElSmall />
-     
-      <ButtonStyle show1={true} nameBtn={"Ajoute en +"} />
-      <BoxSelectorInventaire show1={false} />
       
+      <section className="sect__endCardHome">
+      <IntroTTTxBox title={"Tes  dernieres  cartes"} txt={"Voici les dernières cartes que tu as rajoutés à ta collection. "}/>
+      {/* <BoxSelectorInventaire show1={false} /> */}
+      <div className="endCardHome__rowInfo">
+        <SmallCardCount />
+        <ButtonStyle show1={true} nameBtn={"Ajoute en +"} link={'#'} />
+      </div>
+      <div className="sect__rowCardList">
+        <CardElSmall />
+        <CardElSmall />
+        <CardElSmall />
+        <CardElSmall />
+      </div>
+      </section>
 
     </>
   );
