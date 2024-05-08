@@ -1,0 +1,133 @@
+
+
+.sect{
+    &__graphP{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 16px;
+    }
+}
+
+.graph{
+    &__CountRond{
+        height: 160px;
+        width: 160px;
+        transform-origin: center center;
+        transform:translateY(-2px)
+        translateX(-24px) rotate(140deg);
+        
+        
+
+        &>*{
+            fill: none;
+        stroke: #CEAA67;
+        stroke-width: 16px;
+        transform: translateX(10px) translateY(10px);
+        stroke-dasharray: 378;
+    stroke-dashoffset: calc(378 / 2); // taille du cercle visible , ici 50%
+        // stroke-linecap: round;
+        }
+
+
+        &--small{
+            height: 80px;
+        width: 80px;
+        transform:translateY(2px)
+        translateX(0px) rotate(140deg);
+        &>*{
+            fill: none;
+        stroke: #CEAA67;
+        stroke-width: 12px;
+        transform: translateX(10px) translateY(10px);
+        stroke-dasharray: 160;
+        stroke-dashoffset: calc(160
+         / 2); // taille du cercle visible , ici 50%
+        // stroke-linecap: round;
+        }
+        }
+    }
+
+    &__boxContent{
+       // width: calc(50% - 10px);
+       width: 100%;
+        min-width: 120px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #000;
+        position: relative;
+        z-index: 2;
+        padding: 12px;
+// border: 7px solid #000000;
+border-radius: 8px;
+// border-style: groove;
+        &::after{
+            content: "";
+            width: calc(100% - 14px);
+            height: calc(100% - 14px);
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            border-radius: 4px;
+            margin: 7px;
+        }
+
+        &--bigCard{
+            width:  calc(50% - 10px);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+    }
+    &__boxGraph{
+        min-width: 50px;
+        width: 50%;
+        max-width: 70px;
+        height: 120px;
+        position: relative;
+    }
+    &__nameGraph{
+        font-size: 50px;
+        color: #5c5c5c;
+        transform: translateY(-15dvh) translateX(67%);
+        &--small{
+            font-size: 38px;
+            transform: translateY(-7dvh) translateX(45%);
+        }
+    }
+
+    &__boxTxt{
+        width: 50%;
+        padding: 38px 0 12px 0px;
+
+        &--margeTop{
+            padding: 88px 0 12px 12px;
+        }
+    }
+
+    &__smallCardBox{
+        width: calc(50% - 10px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 21px;
+
+        &>h2{
+            transform: translateX(7px);
+        }
+
+    }
+    &__firstBigGraph{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+//https://youtu.be/MdKvSJOWm_U?t=480

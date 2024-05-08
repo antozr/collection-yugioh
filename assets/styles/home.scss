@@ -7,7 +7,7 @@
         padding: 0 0 0 21px;
         display: flex;
         flex-direction: column;
-        margin: 91px 0 ;
+        margin: 91px 0 0 0 ;
     }
 
     &__rowCardList{
@@ -18,6 +18,13 @@
         overflow-x: scroll;
         padding: 0 28px 0 0 ;
 
+    }
+
+    &__statHome{
+        width: 100%;
+        min-height: 100vh;
+        background-color: #CFC9A9;
+        padding: 38px 21px 91px ;
     }
 }
 
@@ -30,7 +37,7 @@
         width: 100%;
         padding: 0 21px 0 0 ;
         align-items: center;
-        margin: 21px 0 38px 0;
+        margin: 21px 0 21px 0;
 
     }
 }
