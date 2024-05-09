@@ -9,6 +9,8 @@ import CardBoxTitle1 from "./components/atom/CardBoxTitle1";
 import SmallCardCount from "./components/atom/SmallCountCard";
 import ButtonStyle from "./components/atom/bouttonStyle";
 import SmallGraphStat from "./components/samllCardGraphStat";
+import Link from "next/link";
+import CardInfoNews from "./components/CardNewsInfo";
 
 export default function Home() {
   const [nbCardInventaire, setNbCardInventaire] = useState(0);
@@ -60,21 +62,45 @@ export default function Home() {
           }
         />
 
-        <div className="">
-          <svg className="graph__CountRond">
-            <circle cx="60px" cy="60px" r="60px"></circle>
-          </svg>
-        </div>
         <div className="sect__graphP">
-        <SmallGraphStat bigCard={true} nbCartes={"40"} pourcentCarte={80} typeCarte={"Magies"} />
+          <SmallGraphStat
+            bigCard={true}
+            nbCartes={"40"}
+            pourcentCarte={80}
+            typeCarte={"Magies"}
+          />
           <div className="graph__smallCardBox">
-          <SmallGraphStat nbCartes={"40"} pourcentCarte={80} typeCarte={"Magies"} />
-          <h2 className="sect__title sect__title--2">
-            Ta collection
-          </h2>
-          <SmallGraphStat nbCartes={"40"} pourcentCarte={80} typeCarte={"Magies"} />
-          <ButtonStyle nameBtn={"En savoir +"}  />
+            <SmallGraphStat
+              nbCartes={"40"}
+              pourcentCarte={80}
+              typeCarte={"Magies"}
+            />
+            <h2 className="sect__title sect__title--2">Ta collection</h2>
+            <SmallGraphStat
+              nbCartes={"40"}
+              pourcentCarte={80}
+              typeCarte={"Magies"}
+            />
+            <ButtonStyle nameBtn={"En savoir +"} />
           </div>
+        </div>
+      </section>
+
+      <section className="sect__newsBlog">
+        <IntroTTTxBox
+          title={"Les dernieres infos"}
+          txt={
+            "Tu vas découvrir les dernières informations sur les tournois, pack et extensions qui sont programmé.  "
+          }
+        />
+
+        <div className="newsBlog__rowCard">
+          
+          <CardInfoNews imgUrl={"#"} title={"Title 1"} txt={"txt1"} link={"#"} />
+          <CardInfoNews imgUrl={"#"} title={"Title 1"} txt={"txt1"} link={"#"} />
+          <CardInfoNews imgUrl={"#"} title={"Title 1"} txt={"txt1"} link={"#"} />
+          <CardInfoNews imgUrl={"#"} title={"Title 1"} txt={"txt1"} link={"#"} />
+          
         </div>
       </section>
     </>

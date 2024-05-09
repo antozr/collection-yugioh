@@ -1,0 +1,63 @@
+// style for the news blog 
+
+
+.sect{
+
+    &__newsBlog{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+
+}
+
+.newsBlog{
+    &__rowCard{
+       
+        display: flex;
+        flex-direction: row;
+        column-gap: 21px;
+        flex-wrap: nowrap;
+        overflow-x:scroll ;
+        margin: 16px 0;
+
+    }
+
+    &__card{
+        width: calc( ((100vw / 6 ) * 5) - 21px);
+        min-width: 260px;
+        max-width: 360px;
+        height: 70vh;
+        min-height: 460px;
+        max-height: 600px;
+        background-color: red;
+        border: #E2CCA9 solid 4px;
+        background-color: #F2E9E4;
+        padding: 12px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__img{
+        width: calc(100% + 12px);
+        transform: translateX(-6px) translateY(-6px);
+        height: 150px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+    &__bocTxt{
+        padding: 6px 0 0 0;
+    }
+    &__buttonSM{
+        border: none;
+        background-color: transparent;
+        padding: 6px 8px 12px;
+        cursor: pointer;
+        font-weight: 600;
+        display: inline-flex;
+        
+    }
+}
