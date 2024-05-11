@@ -1,0 +1,62 @@
+/// style for the modal of NEWS card
+/// 
+.modalNews{
+
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 12px;
+    padding: 12px 21px;
+    border: #E2CCA9 solid 2px;
+    background-color: #F2E9E4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    animation: both openModal 2s ease-in;
+
+
+
+    &__img{
+        width: calc(100% - 18px);
+        transform: translateX(-9px);
+        height: 150px;
+       border-radius: 6px;
+       object-fit: cover;
+
+    }
+    &__btnClose{
+        font-size: 32px;
+        font-family: "NafaSlice";
+        color: #1d1d1d;
+        border: 1px solid #4E4648;
+        background-color: #E2CCA9;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        rotate: -30deg;
+        position: absolute;
+        top: 8px;
+        right: 4px;
+    }
+}
+
+@keyframes openModal{
+    from{
+        bottom: -120vh;
+        transform: skewX(20deg);
+        opacity: 0.2;
+        scale: 0.8;
+    }
+    30%{
+        transform: skewX(0);
+    }
+    80%{
+        opacity:1;
+        scale: 1;
+    }
+
+    to{
+       
+        bottom: 0;
+    }
+}

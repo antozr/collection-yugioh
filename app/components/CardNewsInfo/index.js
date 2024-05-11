@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { createPortal } from 'react-dom';
+import BigNewsCardModal from '../BigInfoCardModal';
 
 const CardInfoNews = ({imgUrl, title, txt, link}) => {
+
+  const [showModal, setShaowModal]= useState(false);
+
   return (
     <>
     <div className="newsBlog__card">
@@ -23,12 +28,16 @@ const CardInfoNews = ({imgUrl, title, txt, link}) => {
               </p>
             </div>
 
-            <button className="newsBlog__buttonSM">
+            <button className="newsBlog__buttonSM" onClick={()=> setShaowModal(true)}>
               <p className="sect__txt">
                 <i>Lire plus +</i>
               </p>
             </button>
           </div>
+
+          {showModal && createPortal(
+    <BigNewsCardModal onClose={()=> setShaowModal(false)} imgUrl={imgUrl} title={title} contenutTxt={txtz}/>, document.body
+   )}
     </>
   )
 }

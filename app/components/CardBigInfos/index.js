@@ -63,6 +63,8 @@ const BigCardInfosPop = ({
           UpNb={dataBoxInventaire}/>
         </div>
       </div>
+
+      
     </>
   );
 };
