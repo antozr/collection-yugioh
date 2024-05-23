@@ -36,7 +36,7 @@ const CardInfoNews = ({imgUrl, title, txt, link}) => {
           </div>
 
           {showModal && createPortal(
-    <BigNewsCardModal onClose={()=> setShaowModal(false)} imgUrl={imgUrl} title={title} contenutTxt={txtz}/>, document.body
+    <BigNewsCardModal onClose={()=> setShaowModal(false)} imgUrl={imgUrl} title={title} contenutTxt={txt}/>, document.body
    )}
     </>
   )

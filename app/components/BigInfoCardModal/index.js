@@ -20,6 +20,7 @@ const BigNewsCardModal = ({onClose, imgUrl, title, contenutTxt}) => {
             {contenutTxt }
         </p>
     </div>
+
    </div>
 
    

@@ -1,0 +1,18 @@
+
+
+
+.collection{
+
+    &__statSect{
+        display: flex;
+        flex-direction: row;
+        row-gap: 21px;
+        column-gap: 21px;
+        flex-wrap: wrap;
+        padding: 91px 21px;
+
+        &> div{
+            width: calc(50% - 11px);
+        }
+    }
+}

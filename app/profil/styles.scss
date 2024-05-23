@@ -1,0 +1,74 @@
+/// style for the profile page
+
+.profile{
+
+    &__statSect{
+        margin: 91px 21px ;
+    }
+
+    &__statBox{
+        margin: 38px 0;
+    }
+    &__setting{
+       
+        background-color: #F2E9E4;
+        padding: 51px 21px 91px ;
+    }
+}
+
+
+.settings{
+
+    &__list{
+        margin: 38px 0 21px;
+        row-gap: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__boxInput{
+        display: flex;
+        flex-direction: row;
+        column-gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 8px 12px 16px 0;
+    }
+    &__button{
+        padding: 6px 8px ;
+        border-radius: 4px;
+        border: 2px solid #CEAA67;
+        background-color: #CFC9A9;
+        color: #1d1d1d;
+        font-weight: 400;
+        cursor: pointer;
+
+        transition: 0.3s;
+        &:hover{
+            background-color: #1d1d1d;
+            border: 2px solid #1d1d1d;
+            color: #CFC9A9;
+            transition: 0.3s;
+        }
+
+    }
+    &__btnDeco{
+        padding: 8px 12px ;
+        border: 2px solid #E17272;
+        background-color: transparent;
+        color: #E17272;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        border-radius: 8px;
+        transform: translateX(85%);
+        transition: 0.3s;
+
+        &:hover{
+            transition: 0.3;
+            background-color: #E17272;
+            color: #F2E9E4;
+
+        }
+    }
+}
